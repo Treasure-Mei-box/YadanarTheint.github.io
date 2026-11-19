@@ -1,0 +1,85 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Annots [<< /Type /Annot /Subtype /Link /Rect [60 748 260 748] /Border [0 0 0] /A << /S /URI /URI (mailto:yadanartheint2412@gmail.com) >> >>] /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 4183 >>
+stream
+BT /F2 22 Tf 60 800 Td (YADANAR THEINT) Tj ET
+BT /F1 12 Tf 60 778 Td (Student - Data & AI) Tj ET
+BT /F1 10 Tf 60 768 Td (B.CompSc \(Data Science\) - INTI International College Subang) Tj ET
+BT /F1 10 Tf 60 758 Td (\(collaboration with Swinburne University of Technology\), Malaysia) Tj ET
+BT /F1 10 Tf 60 748 Td (Email: yadanartheint2412@gmail.com) Tj ET
+BT /F1 10 Tf 60 738 Td (LinkedIn: linkedin.in/yadanar-theint) Tj ET
+BT /F1 10 Tf 60 728 Td (GitHub: github.com/Treasure-Mei-box) Tj ET
+BT /F2 13 Tf 60 716 Td (PERSONAL DETAILS) Tj ET
+BT /F1 10 Tf 60 696 Td (Name: Yadanar Theint) Tj ET
+BT /F1 10 Tf 60 686 Td (Student: B.CompSc \(Data Science\) - INTI International College Subang, Malaysia) Tj ET
+BT /F1 10 Tf 60 676 Td (Career goal: Graduate / internship roles in data and AI) Tj ET
+BT /F1 10 Tf 60 660 Td (Interests: data analysis & analytics, data visualization, data engineering,) Tj ET
+BT /F1 10 Tf 60 650 Td (  mathematics & statistics, machine learning, education & global collaboration) Tj ET
+BT /F1 10 Tf 60 634 Td (Background: Founder of IntrospectMyanmar - Global Educational Services,) Tj ET
+BT /F1 10 Tf 60 624 Td (  education consultancy helping students pursue global opportunities) Tj ET
+BT /F2 13 Tf 60 606 Td (EDUCATION) Tj ET
+BT /F1 10 Tf 60 586 Td (B.CompSc \(Data Science\) - INTI International College Subang \(Malaysia\), Class of 2027) Tj ET
+BT /F1 10 Tf 60 576 Td (  Collaboration with Swinburne University of Technology \(Australia\)) Tj ET
+BT /F1 10 Tf 60 562 Td (  Coursework: statistics, SQL, data analysis & visualization, mathematics and) Tj ET
+BT /F1 10 Tf 60 548 Td (  software engineering; lab courses \(COS30045 Data Visualization, COS30049) Tj ET
+BT /F1 10 Tf 60 534 Td (  Data & AI projects, COS20007 OOP, COS30015 coursework, COS30019 AI\)) Tj ET
+BT /F2 13 Tf 60 516 Td (SKILLS) Tj ET
+BT /F1 10 Tf 60 496 Td (Languages: Python, JavaScript, C#, SQL) Tj ET
+BT /F1 10 Tf 60 480 Td (Data & AI: data analysis, data visualization \(D3.js\), statistics,) Tj ET
+BT /F1 10 Tf 60 466 Td (  machine learning concepts) Tj ET
+BT /F1 10 Tf 60 450 Td (Web: HTML5, CSS3, JavaScript) Tj ET
+BT /F1 10 Tf 60 434 Td (Tools: Git, GitHub, GitHub Actions, VS Code) Tj ET
+BT /F1 10 Tf 60 418 Td (DevOps: CI/CD pipelines \(GitHub Actions\), automated deployment with GitHub) Tj ET
+BT /F1 10 Tf 60 404 Td (  Pages, Azure App Service deployment experience) Tj ET
+BT /F1 10 Tf 60 388 Td (Technologies: pandas, matplotlib, Jupyter, Random Forest, DBSCAN, XGBoost) Tj ET
+BT /F2 13 Tf 60 370 Td (PROJECTS) Tj ET
+BT /F1 10 Tf 60 350 Td (ASEAN Health Statistics Visualization \(COS30045, Swinburne UTS\)) Tj ET
+BT /F1 9 Tf 60 334 Td (  Interactive data visualization of ASEAN health statistics: life expectancy,) Tj ET
+BT /F1 9 Tf 60 320 Td (  birth rates and population demographics. Data sources: OECD Health Statistics,) Tj ET
+BT /F1 9 Tf 60 306 Td (  Statista, Macrotrends, World Bank, ASEAN Data. D3.js, with Shin Thant Thi Ri.) Tj ET
+BT /F1 10 Tf 60 286 Td (Air Quality Analytics \(COS30049\)) Tj ET
+BT /F1 9 Tf 60 272 Td (  Reproducible data pipeline for cross-country air quality analytics across Malaysia,) Tj ET
+BT /F1 9 Tf 60 258 Td (  Singapore and Thailand \(2014-2024\). Random Forest regression/classification,) Tj ET
+BT /F1 9 Tf 60 244 Td (  DBSCAN clustering. pandas.) Tj ET
+BT /F1 10 Tf 60 228 Td (Online Convenience Store System \(SWE40006\)) Tj ET
+BT /F1 9 Tf 60 214 Td (  Python web app for an online convenience store. Full CI/CD pipeline to Azure) Tj ET
+BT /F1 9 Tf 60 200 Td (  App Service: GitHub Actions, Docker, GHCR, smoke tests, automatic rollback.) Tj ET
+BT /F1 10 Tf 60 184 Td (Object Oriented Programming \(COS20007\)) Tj ET
+BT /F1 9 Tf 60 170 Td (  Object-oriented programming projects and exercises in C#.) Tj ET
+BT /F1 10 Tf 60 154 Td (COS30015 - Object Oriented Programming \(coursework\)) Tj ET
+BT /F1 9 Tf 60 140 Td (  Assignment and practical project submissions with supporting materials.) Tj ET
+BT /F2 13 Tf 60 124 Td (CONTACT) Tj ET
+BT /F1 10 Tf 60 104 Td (Email: yadanartheint2412@gmail.com) Tj ET
+BT /F1 10 Tf 60 88 Td (LinkedIn: linkedin.in/yadanar-theint) Tj ET
+BT /F1 10 Tf 60 72 Td (GitHub: github.com/Treasure-Mei-box) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000212 00000 n 
+0000000314 00000 n 
+0000000592 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4827
+%%EOF

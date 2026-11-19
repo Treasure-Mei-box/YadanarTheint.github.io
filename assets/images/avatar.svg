@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Avatar of Yadanar Theint">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#4cdfb0"/>
+      <stop offset="0.5" stop-color="#2a5d82"/>
+      <stop offset="1" stop-color="#296c71"/>
+    </linearGradient>
+    <linearGradient id="avatarText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#f2b53a"/>
+      <stop offset="1" stop-color="#e9effc"/>
+    </linearGradient>
+    <style type="text/css"><![CDATA[
+      @keyframes avatarSpin { to { transform: rotate(360deg); } }
+      .ring { fill: none; stroke-width: 2; }
+      .pulse { fill: none; stroke: #f2b53a; stroke-width: 1.7; }
+      .pulse-2 { fill: none; stroke: #f2b53a; stroke-width: 1.7; opacity: 0.4; }
+      .pulse-3 { fill: none; stroke: #6a86ff; stroke-width: 1.7; opacity: 0.45; }
+    ]]></style>
+  </defs>
+
+  <circle cx="200" cy="200" r="196" fill="url(#avatarBg)"/>
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#e9effc" stroke-width="0.9" stroke-opacity="0.1"/>
+
+  <!-- orbiting rings -->
+  <circle class="ring" cx="200" cy="200" r="264" fill="none" stroke="#e9effc" stroke-opacity="0.15">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="ring" cx="200" cy="200" r="250" fill="none" stroke="#e9effc" stroke-opacity="0.12" stroke-dasharray="4 10">
+    <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="24s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- pulsing glow rings -->
+  <g>
+    <circle class="pulse" cx="200" cy="200" r="182" fill="none">
+      <animate attributeName="r" values="182;212;182" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.42;1;0.42" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle class="pulse-2" cx="200" cy="200" r="248" fill="none">
+      <animate attributeName="r" values="248;280;248" dur="4.8s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0.2;0.55;0.2" dur="4.8s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle class="pulse-3" cx="200" cy="200" r="192" fill="none">
+      <animate attributeName="r" values="192;216;192" dur="3.6s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0.25;0.6;0.25" dur="3.6s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+  </g>
+
+  <text cx="200" cy="214" text-anchor="middle" font-family="JetBrains Mono, system-ui, monospace" font-size="86" font-weight="800" fill="url(#avatarText)">YT</text>
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#0a1021" stroke-width="1.5" stroke-opacity="0.35"/>
+</svg>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yadanar Theint — Data &amp; AI Student Portfolio</title>
+<meta name="description" content="Animated portfolio of Yadanar Theint, a Data Science student at INTI Subang (Malaysia) — personal details, projects, skills and experience." />
+<meta name="author" content="Yadanar Theint" />
+<link rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://treasure-mei-box.github.io/YadanarTheint.github.io/" />
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<a class="visually-hidden" href="#home">Skip to content</a>
+
+<div class="progress-bar" id="progress"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-brand">
+    <span class="brand-dot"></span>Yadanar<span class="brand-dot brand-slash"></span>Theint
+  </div>
+  <div class="nav-links">
+    <a href="#about" class="nav-link" id="nav-about">About</a>
+    <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+    <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+    <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+    <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+  </div>
+  <a class="nav-cta" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
+  <button type="button" class="nav-menu" id="navMenu" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Main menu">
+  <div class="mobile-menu__panel">
+    <button type="button" class="mobile-menu__close" id="mobileMenuClose">×</button>
+    <nav class="mobile-nav">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+    <a class="mobile-cta" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
+  </div>
+</div>
+
+<!-- ============================================================== hero ==== -->
+<section id="home" class="hero">
+  <canvas class="hero-particles" aria-hidden="true"></canvas>
+
+  <div class="hero-shapes" aria-hidden="true">
+    <span class="shape shape--a"></span>
+    <span class="shape shape--b"></span>
+    <span class="shape shape--c"></span>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-tagline">Student of Data &amp; AI</p>
+
+    <h1 class="hero-name">
+      <span class="hero-name-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+    </h1>
+
+    <h2 class="hero-sub">
+      <span class="hero-sub-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+    </h2>
+
+    <p class="hero-bio">
+      Data Science student at INTI International College Subang, Malaysia — curious about data analysis, data visualization, data engineering and AI engineering.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn--primary" href="#projects">View My Work</a>
+      <a class="btn btn--ghost" href="#about">About Me</a>
+      <a class="btn btn--ghost" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
+    </div>
+
+    <a class="hero-scroll" href="#projects">
+      <span class="hero-scroll-dot"></span>
+      <span class="hero-scroll-label">Scroll</span>
+    </a>
+
+    <img class="hero-avatar" src="assets/images/avatar.svg" alt="Yadanar Theint" />
+  </div>
+</section>
+
+<!-- ============================================================= about ==== -->
+<section id="about" class="section">
+  <div class="section-head reveal">
+    <p class="section-kicker">About</p>
+    <h2 class="section-title">A little about me</h2>
+    <p class="section-sub">Personal details, who I am, and what I care about</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-me reveal">
+      <img class="about-photo" src="assets/images/avatar.svg" alt="Avatar of Yadanar Theint" />
+      <h3 class="about-name">Yadanar Theint</h3>
+      <p class="about-intro">
+        Student at B.CompSc (Data Science) at INTI International College Subang, Malaysia. I enjoy solving mathematical and statistical problems, turning data into clear insights, and building things with data and AI.
+      </p>
+      <div class="about-chips stagger" id="about-interests">
+        <span class="chip chip--highlight reveal">Mathematics &amp; Statistics</span>
+        <span class="chip chip--highlight reveal">Data Analysis</span>
+        <span class="chip chip--highlight reveal">Data Visualization</span>
+        <span class="chip chip--highlight reveal">Machine Learning</span>
+        <span class="chip chip--highlight reveal">AI &amp; Data Engineering</span>
+        <span class="chip chip--highlight reveal">Education &amp; Global Collaboration</span>
+      </div>
+      <a class="chip chip--cta" href="assets/Yadanar_Theint_CV.pdf" download>View my CV</a>
+    </div>
+
+    <div class="facts">
+      <div class="fact reveal">
+        <div class="fact-icon"></div>
+        <div>
+          <h4>Education</h4>
+          <p>B.CompSc (Data Science) — INTI International College Subang (collaboration with Swinburne University of Technology) — Class of 2027.</p>
+        </div>
+      </div>
+      <div class="fact reveal">
+        <div class="fact-icon"></div>
+        <div>
+          <h4>Location</h4>
+          <p>Malaysia</p>
+        </div>
+      </div>
+      <div class="fact reveal">
+        <div class="fact-icon"></div>
+        <div>
+          <h4>Goals</h4>
+          <p>Graduate / internship roles in data and AI.</p>
+        </div>
+      </div>
+      <div class="fact reveal">
+        <div class="fact-icon"></div>
+        <div>
+          <h4>Background</h4>
+          <p>Founded IntrospectMyanmar – Global Educational Services — education consultancy helping students pursue global opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= projects ==== -->
+<section id="projects" class="section">
+  <div class="section-head reveal">
+    <p class="section-kicker">Projects</p>
+    <h2 class="section-title">My work, animated</h2>
+    <p class="section-sub">Selected projects — click any card to explore its animated demo</p>
+  </div>
+
+  <div class="project-grid" id="project-grid"></div>
+</section>
+
+<!-- ============================================================= skills ==== -->
+<section id="skills" class="section">
+  <div class="section-head reveal">
+    <p class="section-kicker">Skills</p>
+    <h2 class="section-title">Skills &amp; tools</h2>
+    <p class="section-sub">What I'm good at, where I'm growing, and the tech I use</p>
+  </div>
+
+  <div class="skills-layout">
+    <div class="skill-bars reveal">
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Python</span>
+          <span class="skill-pct" id="skill-pct-python">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="90"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-pct" id="skill-pct-javascript">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="88"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">C#</span>
+          <span class="skill-pct" id="skill-pct-csharp">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="78"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">SQL</span>
+          <span class="skill-pct" id="skill-pct-sql">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="70"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Statistics</span>
+          <span class="skill-pct" id="skill-pct-stats">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="82"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Data Analysis</span>
+          <span class="skill-pct" id="skill-pct-analysis">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="85"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Data Visualization</span>
+          <span class="skill-pct" id="skill-pct-viz">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="88"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Machine Learning</span>
+          <span class="skill-pct" id="skill-pct-ml">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="76"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Git</span>
+          <span class="skill-pct" id="skill-pct-git">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="92"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">GitHub</span>
+          <span class="skill-pct" id="skill-pct-github">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="89"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">CI / CD &amp; DevOps</span>
+          <span class="skill-pct" id="skill-pct-cicd">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="84"></span></div>
+      </div>
+    </div>
+
+    <div class="skill-meters reveal">
+      <div class="skill-meter" data-pct="90">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <span class="meter-label">Python</span>
+        <span class="meter-value" id="meter-python">90%</span>
+      </div>
+      <div class="skill-meter" data-pct="88">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <span class="meter-label">JavaScript</span>
+        <span class="meter-value" id="meter-javascript">88%</span>
+      </div>
+      <div class="skill-meter" data-pct="78">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <span class="meter-label">C#</span>
+        <span class="meter-value" id="meter-csharp">78%</span>
+      </div>
+      <div class="skill-meter" data-pct="88">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <span class="meter-label">D3.js</span>
+        <span class="meter-value" id="meter-d3">88%</span>
+      </div>
+      <div class="skill-meter" data-pct="82">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <span class="meter-label">Statistics</span>
+        <span class="meter-value" id="meter-stats">82%</span>
+      </div>
+    </div>
+
+    <div class="skill-pills stagger">
+      <span class="skill-pill reveal">Python</span>
+      <span class="skill-pill reveal">JavaScript</span>
+      <span class="skill-pill reveal">C#</span>
+      <span class="skill-pill reveal">SQL</span>
+      <span class="skill-pill reveal">D3.js</span>
+      <span class="skill-pill reveal">HTML5</span>
+      <span class="skill-pill reveal">CSS3</span>
+      <span class="skill-pill reveal">Git</span>
+      <span class="skill-pill reveal">GitHub</span>
+      <span class="skill-pill reveal">Azure</span>
+      <span class="skill-pill reveal">VS Code</span>
+      <span class="skill-pill reveal">Jupyter</span>
+      <span class="skill-pill reveal">pandas</span>
+      <span class="skill-pill reveal">matplotlib</span>
+      <span class="skill-pill reveal">Random Forest</span>
+      <span class="skill-pill reveal">DBSCAN</span>
+      <span class="skill-pill reveal">GitHub Actions</span>
+      <span class="skill-pill reveal">GitHub Pages</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== timeline ==== -->
+<section id="experience" class="section">
+  <div class="section-head reveal">
+    <p class="section-kicker">Experience &amp; Education</p>
+    <h2 class="section-title">Timeline</h2>
+    <p class="section-sub">Education, experience and interests that shaped my path</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="0"></div>
+      <div class="timeline-card">
+        <span class="timeline-card__tag">Education</span>
+        <h3>B.CompSc (Data Science)</h3>
+        <p><strong>INTI International College Subang</strong> — collaboration with Swinburne University of Technology, Malaysia. Class of 2027.</p>
+        <ul>
+          <li>SQL, statistics, math and software engineering coursework</li>
+          <li>Delivered COS30045 Data Visualization, COS30049 Data &amp; AI projects, COS20007 OOP, COS30015 coursework, COS30019 AI</li>
+          <li>Founder, IntrospectMyanmar – Global Educational Services (education consultancy helping students pursue global opportunities)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="1"></div>
+      <div class="timeline-card">
+        <span class="timeline-card__tag">Experience</span>
+        <h3>Founder</h3>
+        <p><strong>IntrospectMyanmar – Global Educational Services</strong></p>
+        <p>Education consultancy helping students pursue global opportunities.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="2"></div>
+      <div class="timeline-card">
+        <span class="timeline-card__tag">Interests</span>
+        <h3>Data Science &amp; AI</h3>
+        <p>Data analysis &amp; visualization, data engineering, AI engineering, mathematics &amp; statistics, education &amp; global collaboration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= contact ==== -->
+<section id="contact" class="section">
+  <div class="section-head reveal">
+    <p class="section-kicker">Contact</p>
+    <h2 class="section-title">Let's connect</h2>
+    <p class="section-sub">Send me a message, copy my email, or say hello on LinkedIn</p>
+  </div>
+
+  <div class="contact-grid">
+    <form class="contact-form" id="contactForm" action="mailto:yadanartheint2412@gmail.com" method="post">
+      <div class="form-field reveal" id="form-name">
+        <label class="form-label" for="c-name">Name</label>
+        <input type="text" id="c-name" name="name" required autocomplete="name" placeholder="Your name" />
+      </div>
+      <div class="form-field reveal" id="form-email">
+        <label class="form-label" for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" required autocomplete="email" placeholder="you@example.com" />
+      </div>
+      <div class="form-field reveal" id="form-subject">
+        <label class="form-label" for="c-subject">Subject</label>
+        <input type="text" id="c-subject" name="subject" required placeholder="What can I help you with?" />
+      </div>
+      <div class="form-field reveal" id="form-message">
+        <label class="form-label" for="c-message">Message</label>
+        <textarea id="c-message" name="message" rows="4" required maxlength="500" placeholder="Hello — I'd love to hear about…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--submit" id="submitBtn">Send Message</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+
+    <div class="contact-info reveal">
+      <h3>Contact info</h3>
+      <a class="big-link" id="emailLink" href="mailto:yadanartheint2412@gmail.com">
+        <span class="big-link-text">yadanartheint2412@gmail.com</span>
+        <span class="arrow-icon" aria-hidden="true">→</span>
+      </a>
+      <button type="button" class="copy-email" id="copyEmail" data-email="yadanartheint2412@gmail.com">
+        <span class="copy-label" id="copyLabel">Copy email</span>
+      </button>
+      <a class="big-link" href="https://www.linkedin.com/in/yadanar-theint" target="_blank" rel="noopener">
+        <span class="big-link-text">LinkedIn</span>
+        <span class="arrow-icon" aria-hidden="true">↗</span>
+      </a>
+      <a class="big-link" href="https://github.com/Treasure-Mei-box" target="_blank" rel="noopener">
+        <span class="big-link-text">GitHub</span>
+        <span class="arrow-icon" aria-hidden="true">↗</span>
+      </a>
+      <div class="info-row">
+        <span class="location-mark" aria-hidden="true">●</span>
+        Malaysia
+      </div>
+      <p class="info-small">I work on data &amp; AI — get in touch about roles, ideas or a hello!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= footer ==== -->
+<footer class="footer">
+  <div class="footer-line">
+    <span class="footer-year">2026</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-by">Built by Yadanar Theint</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-by-2">a lightweight static site on GitHub Pages</span>
+  </div>
+  <div class="footer-links">
+    <a class="footer-link" href="https://www.linkedin.com/in/yadanar-theint" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/Treasure-Mei-box" target="_blank" rel="noopener">GitHub</a>
+    <a class="footer-link" href="mailto:yadanartheint2412@gmail.com">yadanartheint2412@gmail.com</a>
+    <span class="footer-sep">|</span>
+    <span class="footer-place">Malaysia</span>
+  </div>
+  <button type="button" class="scroll-top" id="scrollTop">⌅</button>
+</footer>
+
+<!-- ======================================================== project modal ==== -->
+<div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-inner">
+    <button type="button" class="modal-close" id="modalClose">×</button>
+    <div class="modal-header">
+      <span class="modal-tag" id="modal-tag">#</span>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <p class="modal-subtitle" id="modal-subtitle"></p>
+    </div>
+    <div class="modal-demo-wrap"><div class="modal-demo" id="modal-demo"></div></div>
+    <div class="modal-body">
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-tech" id="modal-tech"></div>
+      <div class="modal-links" id="modal-links"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
