@@ -5,7 +5,7 @@
 
 My personal portfolio site, showcasing my projects, skills and experience as a Computer Science (Data Science) student.
 
-🔗 **Live site:** [treasure-mei-box.github.io](https://treasure-mei-box.github.io)
+🔗 **Live site:** [treasure-mei-box.github.io](https://treasure-mei-box.github.io/YadanarTheint.github.io/)
 
 ---
 
