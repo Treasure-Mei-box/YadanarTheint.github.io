@@ -19,27 +19,38 @@ I'm currently looking for **graduate / internship roles** in data and AI. Feel f
 
 | Section | Contents |
 |---|---|
-| **Home** | Short introduction, current focus and links to my CV and profiles |
-| **Projects** | Selected projects with a description, tech stack, my role and links to code / live demos |
-| **Skills** | Languages, tools and technologies grouped by area |
-| **Experience & Education** | Degree, coursework highlights and any work experience |
+| **Home** | Introduction, portrait, Power BI badge and CV preview / download actions |
+| **About** | Background, focus areas and what I'm currently working on |
+| **Projects** | Seven selected projects with descriptions, tech stacks and links to code / live demos |
+| **Skills** | Languages, data & BI tools, web and DevOps grouped by area |
+| **Certifications** | Microsoft Power BI and LinkedIn credentials, linked to my LinkedIn profile |
+| **Experience & Education** | Work history, degree and coursework highlights |
 | **Contact** | Email and social links |
+
+Clicking **View CV** opens an in-page preview of my resume before downloading it.
 
 ## Featured Projects
 
 | Project | Description | Tech |
 |---|---|---|
-| [Data Visualisation](https://github.com/Treasure-Mei-box/COS30045---Data-Visualization-) | Interactive web-based data visualisation lab work | JavaScript, HTML, CSS |
-| [Object-Oriented Programming](https://github.com/Treasure-Mei-box/COS20007) | Object-oriented programming projects and exercises | C# |
-| _Add project_ | _One-line description of the problem it solves_ | _Tech stack_ |
+| [Online Convenience Store System](https://github.com/Treasure-Mei-box/SWE40006-Group-Project) | CI/CD pipeline on Microsoft Azure for a Flask store (SWE40006) | Python, Flask, Docker, GitHub Actions, Azure |
+| [AirAware — Air Quality Analytics](https://github.com/Treasure-Mei-box/COS30049-Computing-Technology-Innovation-Project-by-YSA) | AQI forecasting and clustering across Malaysia, Singapore and Thailand | Python, scikit-learn, XGBoost, React |
+| [Traffic-Based Route Guidance System](https://github.com/Treasure-Mei-box/cos30019-assignment-2b) | LSTM traffic forecasting feeding an A* route search (COS30019) | Python, TensorFlow/Keras, A* Search |
+| [Your Local Shop](https://github.com/Treasure-Mei-box/SWE30003---SoftwareArchitecture) | Full-stack e-commerce management system (SWE30003) | React, FastAPI, REST APIs, SQL |
+| [ASEAN Health Statistics](https://github.com/Treasure-Mei-box/COS30045---Data-Visualization-) | Interactive D3.js data story on ASEAN health indicators (COS30045) | D3.js, JavaScript, GeoJSON |
+| Melbourne Property Insights | Tableau dashboards comparing Melbourne suburbs on price, yield and growth | Tableau, Excel |
+| SMART ZOO | IoT monitoring with RFID access control and cloud dashboards | IoT Sensors, Thingsboard, Docker |
 
 ## Skills
 
-- **Languages:** Python, JavaScript, C#, SQL _(edit to match your experience)_
-- **Data:** Data analysis, data visualisation _(add libraries, e.g. pandas, D3.js, Power BI)_
-- **Web:** HTML, CSS, JavaScript
-- **Tools:** Git, GitHub, GitHub Actions, VS Code
-- **DevOps:** CI/CD, automated deployment with GitHub Actions
+- **Languages:** Python, SQL, JavaScript, HTML, CSS
+- **Data & BI:** Power BI, Tableau, Excel, KNIME, pandas, scikit-learn, TensorFlow/Keras
+- **Web:** React, FastAPI, Node.js, REST APIs
+- **Tools & DevOps:** Git, GitHub, GitHub Actions, Docker, Azure, VS Code, Google Colab
+
+## Design
+
+The site uses a **Warm Autumn Glow** palette (espresso, burnt orange, golden amber, terracotta and cream) with `Fraunces` for display type, `Inter` for body text and `JetBrains Mono` for labels.
 
 ## Built With
 

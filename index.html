@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Yadanar Theint — Data &amp; AI Student Portfolio</title>
-<meta name="description" content="Animated portfolio of Yadanar Theint, a Data Science student at INTI Subang (Malaysia) — personal details, projects, skills and experience." />
+<title>Yadanar Theint — Data Science &amp; AI Portfolio</title>
+<meta name="description" content="Portfolio of Yadanar Theint — final-year Computer Science (Data Science) student at INTI Subang, Malaysia. Data analysis, machine learning, Power BI, cloud and DevOps projects." />
 <meta name="author" content="Yadanar Theint" />
 <link rel="stylesheet" href="css/style.css" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
 <link rel="canonical" href="https://treasure-mei-box.github.io/YadanarTheint.github.io/" />
@@ -19,33 +20,38 @@
 <div class="progress-bar" id="progress"></div>
 
 <nav class="nav" id="nav">
-  <div class="nav-brand">
+  <a class="nav-brand" href="#home">
     <span class="brand-dot"></span>Yadanar<span class="brand-dot brand-slash"></span>Theint
-  </div>
+  </a>
   <div class="nav-links">
     <a href="#about" class="nav-link" id="nav-about">About</a>
     <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
     <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+    <a href="#certifications" class="nav-link" id="nav-certifications">Certifications</a>
     <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
     <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
   </div>
-  <a class="nav-cta" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
-  <button type="button" class="nav-menu" id="navMenu" aria-label="Menu">
+  <button type="button" class="nav-cta" data-cv-open>
+    <span class="nav-cta__dot" aria-hidden="true"></span>CV Preview
+  </button>
+  <button type="button" class="nav-menu" id="navMenu" aria-label="Menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Main menu">
   <div class="mobile-menu__panel">
-    <button type="button" class="mobile-menu__close" id="mobileMenuClose">×</button>
+    <button type="button" class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">×</button>
     <nav class="mobile-nav">
       <a href="#about" class="mobile-link">About</a>
       <a href="#projects" class="mobile-link">Projects</a>
       <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#certifications" class="mobile-link">Certifications</a>
       <a href="#experience" class="mobile-link">Experience</a>
       <a href="#contact" class="mobile-link">Contact</a>
     </nav>
-    <a class="mobile-cta" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
+    <button type="button" class="btn btn--primary mobile-cta" data-cv-open>Preview CV</button>
+    <a class="btn btn--ghost mobile-cta" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
   </div>
 </div>
 
@@ -59,34 +65,75 @@
     <span class="shape shape--c"></span>
   </div>
 
-  <div class="hero-content">
-    <p class="hero-tagline">Student of Data &amp; AI</p>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="hero-tagline">Data Science · Machine Learning · Cloud</p>
 
-    <h1 class="hero-name">
-      <span class="hero-name-text"></span><span class="typing-cursor" aria-hidden="true"></span>
-    </h1>
+      <h1 class="hero-name">
+        <span class="hero-name-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+      </h1>
 
-    <h2 class="hero-sub">
-      <span class="hero-sub-text"></span><span class="typing-cursor" aria-hidden="true"></span>
-    </h2>
+      <h2 class="hero-sub">
+        <span class="hero-sub-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+      </h2>
 
-    <p class="hero-bio">
-      Data Science student at INTI International College Subang, Malaysia — curious about data analysis, data visualization, data engineering and AI engineering.
-    </p>
+      <p class="hero-bio">
+        Final-year Computer Science (Data Science) student at INTI International College Subang, Malaysia.
+        I build data solutions end to end — from cleaning and analysing data to machine learning models
+        and automated cloud deployments.
+      </p>
 
-    <div class="hero-actions">
-      <a class="btn btn--primary" href="#projects">View My Work</a>
-      <a class="btn btn--ghost" href="#about">About Me</a>
-      <a class="btn btn--ghost" href="assets/Yadanar_Theint_CV.pdf" download>Download CV</a>
+      <div class="hero-actions">
+        <button type="button" class="btn btn--primary" data-cv-open>
+          <span class="btn-icon" aria-hidden="true">◉</span> Preview CV
+        </button>
+        <a class="btn btn--ghost" href="#projects">View My Work</a>
+        <a class="btn btn--ghost btn--download" href="assets/Yadanar_Theint_CV.pdf" download="Yadanar_Theint_CV.pdf">
+          Download CV <span class="btn-icon" aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta__item">
+          <strong>7</strong>
+          <span>academic &amp; team projects</span>
+        </div>
+        <div class="hero-meta__item">
+          <strong>Power BI</strong>
+          <span>BI &amp; dashboards</span>
+        </div>
+        <div class="hero-meta__item">
+          <strong>Azure</strong>
+          <span>CI/CD &amp; cloud</span>
+        </div>
+      </div>
     </div>
 
-    <a class="hero-scroll" href="#projects">
-      <span class="hero-scroll-dot"></span>
-      <span class="hero-scroll-label">Scroll</span>
-    </a>
-
-    <img class="hero-avatar" src="assets/images/avatar.svg" alt="Yadanar Theint" />
+    <div class="hero-visual">
+      <div class="hero-portrait">
+        <img src="assets/images/resume.jpg" alt="Portrait of Yadanar Theint" width="1254" height="1254" />
+      </div>
+      <div class="hero-badge hero-badge--top">
+        <span class="hero-badge__icon" aria-hidden="true">▥</span>
+        <div>
+          <strong>Power BI</strong>
+          <span>Dashboards &amp; DAX</span>
+        </div>
+      </div>
+      <div class="hero-badge hero-badge--bottom">
+        <span class="hero-badge__icon" aria-hidden="true">✦</span>
+        <div>
+          <strong>Open to internships</strong>
+          <span>Dec 2026 – Mar 2027</span>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <a class="hero-scroll" href="#about">
+    <span class="hero-scroll-dot"></span>
+    <span class="hero-scroll-label">Scroll</span>
+  </a>
 </section>
 
 <!-- ============================================================= about ==== -->
@@ -94,25 +141,34 @@
   <div class="section-head reveal">
     <p class="section-kicker">About</p>
     <h2 class="section-title">A little about me</h2>
-    <p class="section-sub">Personal details, who I am, and what I care about</p>
+    <p class="section-sub">Final-year data science student, builder and co-founder</p>
   </div>
 
   <div class="about-grid">
     <div class="about-me reveal">
-      <img class="about-photo" src="assets/images/avatar.svg" alt="Avatar of Yadanar Theint" />
+      <div class="about-photo-wrap">
+        <img class="about-photo" src="assets/images/resume.jpg" alt="Portrait of Yadanar Theint" width="1254" height="1254" loading="lazy" />
+      </div>
       <h3 class="about-name">Yadanar Theint</h3>
       <p class="about-intro">
-        Student at B.CompSc (Data Science) at INTI International College Subang, Malaysia. I enjoy solving mathematical and statistical problems, turning data into clear insights, and building things with data and AI.
+        I'm a final-year Bachelor of Computer Science (Data Science) student at INTI International College
+        Subang, in collaboration with Swinburne University of Technology. I enjoy turning messy data into
+        clear insight, training and evaluating machine learning models, and shipping the result through a
+        clean, automated pipeline. I'm also co-founder of an education consultancy, where I lead counselling
+        and student records.
       </p>
       <div class="about-chips stagger" id="about-interests">
-        <span class="chip chip--highlight reveal">Mathematics &amp; Statistics</span>
         <span class="chip chip--highlight reveal">Data Analysis</span>
-        <span class="chip chip--highlight reveal">Data Visualization</span>
         <span class="chip chip--highlight reveal">Machine Learning</span>
-        <span class="chip chip--highlight reveal">AI &amp; Data Engineering</span>
-        <span class="chip chip--highlight reveal">Education &amp; Global Collaboration</span>
+        <span class="chip chip--highlight reveal">Power BI &amp; Tableau</span>
+        <span class="chip chip--highlight reveal">Data Visualization</span>
+        <span class="chip chip--highlight reveal">Cloud &amp; DevOps</span>
+        <span class="chip chip--highlight reveal">Education &amp; Collaboration</span>
       </div>
-      <a class="chip chip--cta" href="assets/Yadanar_Theint_CV.pdf" download>View my CV</a>
+      <div class="about-actions">
+        <button type="button" class="chip chip--cta" data-cv-open>Preview my CV</button>
+        <a class="chip" href="assets/Yadanar_Theint_CV.pdf" download="Yadanar_Theint_CV.pdf">Download PDF ↓</a>
+      </div>
     </div>
 
     <div class="facts">
@@ -120,28 +176,35 @@
         <div class="fact-icon"></div>
         <div>
           <h4>Education</h4>
-          <p>B.CompSc (Data Science) — INTI International College Subang (collaboration with Swinburne University of Technology) — Class of 2027.</p>
+          <p>B.CompSc (Data Science) — INTI International College Subang with Swinburne University of Technology (Australia) — Class of 2027.</p>
+        </div>
+      </div>
+      <div class="fact reveal">
+        <div class="fact-icon"></div>
+        <div>
+          <h4>Availability</h4>
+          <p>Full-time internship from December 2026 to March 2027 — data science, data analyst, data engineering, machine learning or cloud/DevOps.</p>
         </div>
       </div>
       <div class="fact reveal">
         <div class="fact-icon"></div>
         <div>
           <h4>Location</h4>
-          <p>Malaysia</p>
+          <p>Subang Jaya, Selangor, Malaysia.</p>
         </div>
       </div>
       <div class="fact reveal">
         <div class="fact-icon"></div>
         <div>
-          <h4>Goals</h4>
-          <p>Graduate / internship roles in data and AI.</p>
+          <h4>Languages</h4>
+          <p>Burmese (native) · English (fluent) · Chinese (basic).</p>
         </div>
       </div>
       <div class="fact reveal">
         <div class="fact-icon"></div>
         <div>
           <h4>Background</h4>
-          <p>Founded IntrospectMyanmar – Global Educational Services — education consultancy helping students pursue global opportunities.</p>
+          <p>Co-founder &amp; Head of Counselors at Introspect Myanmar Global Education Services — guiding students towards international study.</p>
         </div>
       </div>
     </div>
@@ -152,8 +215,8 @@
 <section id="projects" class="section">
   <div class="section-head reveal">
     <p class="section-kicker">Projects</p>
-    <h2 class="section-title">My work, animated</h2>
-    <p class="section-sub">Selected projects — click any card to explore its animated demo</p>
+    <h2 class="section-title">Selected work</h2>
+    <p class="section-sub">Seven projects from my CV — click any card to explore the story, stack and demo</p>
   </div>
 
   <div class="project-grid" id="project-grid"></div>
@@ -164,7 +227,7 @@
   <div class="section-head reveal">
     <p class="section-kicker">Skills</p>
     <h2 class="section-title">Skills &amp; tools</h2>
-    <p class="section-sub">What I'm good at, where I'm growing, and the tech I use</p>
+    <p class="section-sub">The languages, platforms and analytics tools I work with</p>
   </div>
 
   <div class="skills-layout">
@@ -178,38 +241,24 @@
       </div>
       <div class="skill-bar">
         <div class="skill-bar__head">
-          <span class="skill-name">JavaScript</span>
-          <span class="skill-pct" id="skill-pct-javascript">0%</span>
-        </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="88"></span></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar__head">
-          <span class="skill-name">C#</span>
-          <span class="skill-pct" id="skill-pct-csharp">0%</span>
-        </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="78"></span></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar__head">
           <span class="skill-name">SQL</span>
           <span class="skill-pct" id="skill-pct-sql">0%</span>
-        </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="70"></span></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar__head">
-          <span class="skill-name">Statistics</span>
-          <span class="skill-pct" id="skill-pct-stats">0%</span>
         </div>
         <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="82"></span></div>
       </div>
       <div class="skill-bar">
         <div class="skill-bar__head">
-          <span class="skill-name">Data Analysis</span>
-          <span class="skill-pct" id="skill-pct-analysis">0%</span>
+          <span class="skill-name">Power BI</span>
+          <span class="skill-pct" id="skill-pct-powerbi">0%</span>
         </div>
         <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="85"></span></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar__head">
+          <span class="skill-name">Tableau</span>
+          <span class="skill-pct" id="skill-pct-tableau">0%</span>
+        </div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="80"></span></div>
       </div>
       <div class="skill-bar">
         <div class="skill-bar__head">
@@ -223,94 +272,174 @@
           <span class="skill-name">Machine Learning</span>
           <span class="skill-pct" id="skill-pct-ml">0%</span>
         </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="76"></span></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar__head">
-          <span class="skill-name">Git</span>
-          <span class="skill-pct" id="skill-pct-git">0%</span>
-        </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="92"></span></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar__head">
-          <span class="skill-name">GitHub</span>
-          <span class="skill-pct" id="skill-pct-github">0%</span>
-        </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="89"></span></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-bar__head">
-          <span class="skill-name">CI / CD &amp; DevOps</span>
-          <span class="skill-pct" id="skill-pct-cicd">0%</span>
-        </div>
-        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="84"></span></div>
+        <div class="skill-bar__track"><span class="skill-bar__fill" data-pct="78"></span></div>
       </div>
     </div>
 
-    <div class="skill-meters reveal">
-      <div class="skill-meter" data-pct="90">
-        <svg viewBox="0 0 120 120" aria-hidden="true">
-          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
-          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
-        </svg>
-        <span class="meter-label">Python</span>
-        <span class="meter-value" id="meter-python">90%</span>
+    <div class="skills-side">
+      <div class="skills-card reveal">
+        <span class="skills-card__tag">Business Intelligence</span>
+        <h3>Power BI</h3>
+        <p>Interactive reports, data modelling, DAX measures and Power Query transformations — plus Tableau dashboards for exploratory and market analysis.</p>
+        <a class="skills-card__link" href="https://www.linkedin.com/in/yadanar-theint/" target="_blank" rel="noopener">
+          Power BI certificates on LinkedIn <span aria-hidden="true">↗</span>
+        </a>
       </div>
-      <div class="skill-meter" data-pct="88">
-        <svg viewBox="0 0 120 120" aria-hidden="true">
-          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
-          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
-        </svg>
-        <span class="meter-label">JavaScript</span>
-        <span class="meter-value" id="meter-javascript">88%</span>
-      </div>
-      <div class="skill-meter" data-pct="78">
-        <svg viewBox="0 0 120 120" aria-hidden="true">
-          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
-          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
-        </svg>
-        <span class="meter-label">C#</span>
-        <span class="meter-value" id="meter-csharp">78%</span>
-      </div>
-      <div class="skill-meter" data-pct="88">
-        <svg viewBox="0 0 120 120" aria-hidden="true">
-          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
-          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
-        </svg>
-        <span class="meter-label">D3.js</span>
-        <span class="meter-value" id="meter-d3">88%</span>
-      </div>
-      <div class="skill-meter" data-pct="82">
-        <svg viewBox="0 0 120 120" aria-hidden="true">
-          <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
-          <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
-        </svg>
-        <span class="meter-label">Statistics</span>
-        <span class="meter-value" id="meter-stats">82%</span>
-      </div>
-    </div>
 
-    <div class="skill-pills stagger">
-      <span class="skill-pill reveal">Python</span>
-      <span class="skill-pill reveal">JavaScript</span>
-      <span class="skill-pill reveal">C#</span>
-      <span class="skill-pill reveal">SQL</span>
-      <span class="skill-pill reveal">D3.js</span>
-      <span class="skill-pill reveal">HTML5</span>
-      <span class="skill-pill reveal">CSS3</span>
-      <span class="skill-pill reveal">Git</span>
-      <span class="skill-pill reveal">GitHub</span>
-      <span class="skill-pill reveal">Azure</span>
-      <span class="skill-pill reveal">VS Code</span>
-      <span class="skill-pill reveal">Jupyter</span>
-      <span class="skill-pill reveal">pandas</span>
-      <span class="skill-pill reveal">matplotlib</span>
-      <span class="skill-pill reveal">Random Forest</span>
-      <span class="skill-pill reveal">DBSCAN</span>
-      <span class="skill-pill reveal">GitHub Actions</span>
-      <span class="skill-pill reveal">GitHub Pages</span>
+      <div class="skill-meters reveal">
+        <div class="skill-meter" data-pct="90">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+            <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <span class="meter-label">Python</span>
+          <span class="meter-value" id="meter-python">90%</span>
+        </div>
+        <div class="skill-meter" data-pct="82">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+            <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <span class="meter-label">SQL</span>
+          <span class="meter-value" id="meter-sql">82%</span>
+        </div>
+        <div class="skill-meter" data-pct="85">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+            <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <span class="meter-label">Power BI</span>
+          <span class="meter-value" id="meter-powerbi">85%</span>
+        </div>
+        <div class="skill-meter" data-pct="80">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+            <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <span class="meter-label">Tableau</span>
+          <span class="meter-value" id="meter-tableau">80%</span>
+        </div>
+        <div class="skill-meter" data-pct="78">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="arc arc--track" cx="60" cy="60" r="50"></circle>
+            <circle class="arc arc--filled" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <span class="meter-label">ML</span>
+          <span class="meter-value" id="meter-ml">78%</span>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="skill-groups">
+    <div class="skill-group reveal">
+      <h4>Languages</h4>
+      <div class="skill-pills">
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">TypeScript</span>
+        <span class="skill-pill">C#</span>
+        <span class="skill-pill">HTML5</span>
+        <span class="skill-pill">CSS3</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <h4>Data &amp; Machine Learning</h4>
+      <div class="skill-pills">
+        <span class="skill-pill">pandas</span>
+        <span class="skill-pill">NumPy</span>
+        <span class="skill-pill">scikit-learn</span>
+        <span class="skill-pill">XGBoost</span>
+        <span class="skill-pill">TensorFlow / Keras</span>
+        <span class="skill-pill">LSTM &amp; GRU</span>
+        <span class="skill-pill">Random Forest</span>
+        <span class="skill-pill">DBSCAN &amp; K-Means</span>
+        <span class="skill-pill">Time-Series Forecasting</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <h4>BI &amp; Visualization</h4>
+      <div class="skill-pills">
+        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">Tableau</span>
+        <span class="skill-pill">D3.js</span>
+        <span class="skill-pill">matplotlib</span>
+        <span class="skill-pill">Excel</span>
+        <span class="skill-pill">KNIME</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <h4>Cloud, Web &amp; Tools</h4>
+      <div class="skill-pills">
+        <span class="skill-pill">Microsoft Azure</span>
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">GitHub Actions</span>
+        <span class="skill-pill">GHCR</span>
+        <span class="skill-pill">Flask</span>
+        <span class="skill-pill">FastAPI</span>
+        <span class="skill-pill">React</span>
+        <span class="skill-pill">SQLite</span>
+        <span class="skill-pill">Pytest</span>
+        <span class="skill-pill">Flake8</span>
+        <span class="skill-pill">Jupyter</span>
+        <span class="skill-pill">Google Colab</span>
+        <span class="skill-pill">Git &amp; GitHub</span>
+        <span class="skill-pill">Linux</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== certifications ==== -->
+<section id="certifications" class="section">
+  <div class="section-head reveal">
+    <p class="section-kicker">Certifications</p>
+    <h2 class="section-title">Power BI &amp; credentials</h2>
+    <p class="section-sub">Business intelligence skills and the certificates behind them</p>
+  </div>
+
+  <div class="cert-grid">
+    <article class="cert-card cert-card--feature reveal">
+      <div class="cert-card__top">
+        <span class="cert-icon" aria-hidden="true">▥</span>
+        <span class="cert-tag">Business Intelligence</span>
+      </div>
+      <h3>Microsoft Power BI</h3>
+      <p>
+        I use Power BI to model data, write DAX measures and build interactive dashboards that make
+        performance and trends easy to read. It sits alongside Tableau and Excel in my analytics toolkit.
+      </p>
+      <ul class="cert-list">
+        <li>Data modelling &amp; relationships</li>
+        <li>DAX measures and calculated columns</li>
+        <li>Power Query data preparation</li>
+        <li>Interactive reports &amp; dashboard design</li>
+      </ul>
+      <a class="btn btn--primary cert-btn" href="https://www.linkedin.com/in/yadanar-theint/" target="_blank" rel="noopener">
+        View Power BI certificates on LinkedIn <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+
+    <article class="cert-card reveal">
+      <div class="cert-card__top">
+        <span class="cert-icon cert-icon--outline" aria-hidden="true">✦</span>
+        <span class="cert-tag">Credentials</span>
+      </div>
+      <h3>Certificates &amp; badges</h3>
+      <p>
+        My latest certificates, course completions and badges are listed in the
+        <strong>Licenses &amp; certifications</strong> section of my LinkedIn profile — including Power BI.
+      </p>
+      <div class="cert-linkedin">
+        <span class="cert-linkedin__label">LinkedIn profile</span>
+        <a class="big-link" href="https://www.linkedin.com/in/yadanar-theint/" target="_blank" rel="noopener">
+          <span class="big-link-text">linkedin.com/in/yadanar-theint</span>
+          <span class="arrow-icon" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p class="cert-note">Certificate names, issuers and dates are kept up to date on LinkedIn.</p>
+    </article>
   </div>
 </section>
 
@@ -319,7 +448,7 @@
   <div class="section-head reveal">
     <p class="section-kicker">Experience &amp; Education</p>
     <h2 class="section-title">Timeline</h2>
-    <p class="section-sub">Education, experience and interests that shaped my path</p>
+    <p class="section-sub">Work, study and the path that shaped how I work with data</p>
   </div>
 
   <div class="timeline">
@@ -328,13 +457,17 @@
     <div class="timeline-item reveal">
       <div class="timeline-dot" data-index="0"></div>
       <div class="timeline-card">
-        <span class="timeline-card__tag">Education</span>
-        <h3>B.CompSc (Data Science)</h3>
-        <p><strong>INTI International College Subang</strong> — collaboration with Swinburne University of Technology, Malaysia. Class of 2027.</p>
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Experience</span>
+          <span class="timeline-card__date">11/2024 – Present</span>
+        </div>
+        <h3>Co-Founder &amp; Head of Counselors</h3>
+        <p><strong>Introspect Myanmar Global Education Services</strong></p>
         <ul>
-          <li>SQL, statistics, math and software engineering coursework</li>
-          <li>Delivered COS30045 Data Visualization, COS30049 Data &amp; AI projects, COS20007 OOP, COS30015 coursework, COS30019 AI</li>
-          <li>Founder, IntrospectMyanmar – Global Educational Services (education consultancy helping students pursue global opportunities)</li>
+          <li>Co-founded an education consultancy providing international study guidance.</li>
+          <li>Lead counselling on university selection, admissions and career pathways.</li>
+          <li>Manage student records, application documents and progress tracking with high data accuracy.</li>
+          <li>Coordinate students, parents and partner institutions through smooth admission processes.</li>
         </ul>
       </div>
     </div>
@@ -342,19 +475,94 @@
     <div class="timeline-item reveal">
       <div class="timeline-dot" data-index="1"></div>
       <div class="timeline-card">
-        <span class="timeline-card__tag">Experience</span>
-        <h3>Founder</h3>
-        <p><strong>IntrospectMyanmar – Global Educational Services</strong></p>
-        <p>Education consultancy helping students pursue global opportunities.</p>
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Experience</span>
+          <span class="timeline-card__date">02/2023 – 06/2023</span>
+        </div>
+        <h3>Entry Clerk</h3>
+        <p><strong>Master Clean, SS15</strong></p>
+        <ul>
+          <li>Entered, organised and verified customer and service data with high accuracy.</li>
+          <li>Supported daily administrative operations.</li>
+        </ul>
       </div>
     </div>
 
     <div class="timeline-item reveal">
       <div class="timeline-dot" data-index="2"></div>
       <div class="timeline-card">
-        <span class="timeline-card__tag">Interests</span>
-        <h3>Data Science &amp; AI</h3>
-        <p>Data analysis &amp; visualization, data engineering, AI engineering, mathematics &amp; statistics, education &amp; global collaboration.</p>
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Experience</span>
+          <span class="timeline-card__date">05/2022 – 10/2023</span>
+        </div>
+        <h3>Service Crew / Operation Crew</h3>
+        <p><strong>JYU RAKU Restaurant &amp; BITE Cafe, SS15</strong></p>
+        <ul>
+          <li>Delivered efficient customer service in fast-paced environments.</li>
+          <li>Managed multiple tasks under pressure during peak service.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="3"></div>
+      <div class="timeline-card">
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Experience</span>
+          <span class="timeline-card__date">07/2020 – 03/2022</span>
+        </div>
+        <h3>Assistant to the CEO</h3>
+        <p><strong>Hygieia Biogenics Myanmar</strong></p>
+        <ul>
+          <li>Managed inventory records and stock levels.</li>
+          <li>Coordinated order processing and deliveries for timely, accurate fulfilment.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="4"></div>
+      <div class="timeline-card">
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Education</span>
+          <span class="timeline-card__date">2023 – 2027</span>
+        </div>
+        <h3>Bachelor of Computer Science (Data Science)</h3>
+        <p><strong>INTI International College Subang &amp; Swinburne University of Technology (Australia)</strong></p>
+        <ul>
+          <li>CGPA 2.7/4.00 (Australia) · CGPA 3.47/4.00 (Malaysia) — Merit Award recipient every semester.</li>
+          <li>Coursework across data visualization, data &amp; AI projects, OOP, software architecture and AI.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="5"></div>
+      <div class="timeline-card">
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Education</span>
+          <span class="timeline-card__date">2022 – 2023</span>
+        </div>
+        <h3>Foundation in Information Technology</h3>
+        <p><strong>INTI International College Subang</strong></p>
+        <ul>
+          <li>CGPA 3.57/4.00 (Malaysia).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" data-index="6"></div>
+      <div class="timeline-card">
+        <div class="timeline-card__meta">
+          <span class="timeline-card__tag">Education</span>
+          <span class="timeline-card__date">2016 – 2020</span>
+        </div>
+        <h3>Bachelor of Civil Engineering (Paused)</h3>
+        <p><strong>West Yangon Technological University</strong></p>
+        <ul>
+          <li>CGPA 4.87/5.00 · completed through the fifth year before pausing due to the COVID-19 pandemic.</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -365,7 +573,7 @@
   <div class="section-head reveal">
     <p class="section-kicker">Contact</p>
     <h2 class="section-title">Let's connect</h2>
-    <p class="section-sub">Send me a message, copy my email, or say hello on LinkedIn</p>
+    <p class="section-sub">Send me a message, preview my CV, or say hello on LinkedIn</p>
   </div>
 
   <div class="contact-grid">
@@ -399,7 +607,7 @@
       <button type="button" class="copy-email" id="copyEmail" data-email="yadanartheint2412@gmail.com">
         <span class="copy-label" id="copyLabel">Copy email</span>
       </button>
-      <a class="big-link" href="https://www.linkedin.com/in/yadanar-theint" target="_blank" rel="noopener">
+      <a class="big-link" href="https://www.linkedin.com/in/yadanar-theint/" target="_blank" rel="noopener">
         <span class="big-link-text">LinkedIn</span>
         <span class="arrow-icon" aria-hidden="true">↗</span>
       </a>
@@ -407,9 +615,13 @@
         <span class="big-link-text">GitHub</span>
         <span class="arrow-icon" aria-hidden="true">↗</span>
       </a>
+      <div class="contact-cta">
+        <button type="button" class="btn btn--primary" data-cv-open>Preview CV</button>
+        <a class="btn btn--ghost" href="assets/Yadanar_Theint_CV.pdf" download="Yadanar_Theint_CV.pdf">Download ↓</a>
+      </div>
       <div class="info-row">
         <span class="location-mark" aria-hidden="true">●</span>
-        Malaysia
+        Subang Jaya, Selangor, Malaysia
       </div>
       <p class="info-small">I work on data &amp; AI — get in touch about roles, ideas or a hello!</p>
     </div>
@@ -426,19 +638,19 @@
     <span class="footer-by-2">a lightweight static site on GitHub Pages</span>
   </div>
   <div class="footer-links">
-    <a class="footer-link" href="https://www.linkedin.com/in/yadanar-theint" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="footer-link" href="https://www.linkedin.com/in/yadanar-theint/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="footer-link" href="https://github.com/Treasure-Mei-box" target="_blank" rel="noopener">GitHub</a>
     <a class="footer-link" href="mailto:yadanartheint2412@gmail.com">yadanartheint2412@gmail.com</a>
     <span class="footer-sep">|</span>
     <span class="footer-place">Malaysia</span>
   </div>
-  <button type="button" class="scroll-top" id="scrollTop">⌅</button>
+  <button type="button" class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 </footer>
 
 <!-- ======================================================== project modal ==== -->
 <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="modal-inner">
-    <button type="button" class="modal-close" id="modalClose">×</button>
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close project">×</button>
     <div class="modal-header">
       <span class="modal-tag" id="modal-tag">#</span>
       <h2 class="modal-title" id="modal-title"></h2>
@@ -449,6 +661,35 @@
       <p class="modal-desc" id="modal-desc"></p>
       <div class="modal-tech" id="modal-tech"></div>
       <div class="modal-links" id="modal-links"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================= CV modal ==== -->
+<div class="cv-modal" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+  <div class="cv-modal__inner">
+    <header class="cv-modal__head">
+      <div class="cv-modal__title-wrap">
+        <span class="modal-tag">Curriculum Vitae</span>
+        <h2 class="cv-modal__title" id="cv-modal-title">Yadanar Theint — CV</h2>
+        <p class="cv-modal__sub">Preview before you download. Three pages, updated November 2026.</p>
+      </div>
+      <div class="cv-modal__actions">
+        <a class="btn btn--primary btn--sm" href="assets/Yadanar_Theint_CV.pdf" download="Yadanar_Theint_CV.pdf">
+          Download PDF <span aria-hidden="true">↓</span>
+        </a>
+        <a class="btn btn--ghost btn--sm" href="assets/Yadanar_Theint_CV.pdf" target="_blank" rel="noopener">
+          Open in new tab <span aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="cv-modal__close" id="cvClose" aria-label="Close CV preview">×</button>
+      </div>
+    </header>
+    <div class="cv-modal__body">
+      <iframe id="cvFrame" class="cv-frame" title="Preview of Yadanar Theint's CV" src="about:blank" loading="lazy"></iframe>
+      <p class="cv-modal__fallback">
+        Can't see the preview in this browser?
+        <a href="assets/Yadanar_Theint_CV.pdf" target="_blank" rel="noopener">Open the PDF in a new tab ↗</a>
+      </p>
     </div>
   </div>
 </div>
