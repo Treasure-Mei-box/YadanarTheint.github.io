@@ -30,7 +30,7 @@ jobs:
 
           missing = []
           for src in re.findall(r'(?:src|href)="([^"#]+)"', html):
-              if src.startswith(("http://", "https://", "mailto:", "data:")):
+              if src.startswith(("http://", "https://", "mailto:", "data:", "about:")):
                   continue
               if not (root / src).exists():
                   missing.append(src)
